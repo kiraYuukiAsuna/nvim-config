@@ -14,4 +14,4 @@
 
 4. 同步完成后退出再次进入会自动下载剩余文件
 
-5. 命令模式下输入MeasonInstall xxxx，其中xxxx代表要下载的language server，根据需要下载
+5. 命令模式下输入MasonInstall xxxx，其中xxxx代表要下载的language server，根据需要下载
