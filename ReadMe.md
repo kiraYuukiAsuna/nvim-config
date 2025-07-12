@@ -1,17 +1,37 @@
 # ReadMe
 
-## 这是什么？
+## 介绍
 
-这个仓库是我的Neovim的配置，基于Lua。
+这个仓库是我的Neovim的配置，基于nvchad修改而来。
 
 ## 使用方式
 
 1. 下载nvim
 
-2. 将配置文件放在指定地方，在 mac/linux 中，该配置文件位于 ~/.config/nvim/ 目录下，而在 windows 系统中，该目录位于 %USERPROFILE%\AppData\Local\nvim\
+2. 将配置文件放在配置文件所在目录，注意你可能需要删除并备份旧的配置文件目录，在 mac/linux 中，该配置文件位于 ~/.config/nvim/ 目录下，而在 windows 系统中，该目录位于 %USERPROFILE%\AppData\Local\nvim\
 
-3. 进入nvim，命令模式下输入PackerSync同步插件
+3. 打开nvim，默认情况下插件会开始自动下载同步，如果有文件下载失败，不要慌张，等待其他文件下载完成后，退出再次打开，尝试下载失败的插件
 
-4. 同步完成后退出再次进入会自动下载剩余文件
+4. Run :MasonInstallAll command after lazy.nvim finishes downloading plugins. 会下载相关的LSP插件等
 
-5. 命令模式下输入MasonInstall xxxx，其中xxxx代表要下载的language server，根据需要下载
+5. 更新插件命令：:Lazy sync
+
+## 卸载删除
+
+# Linux / MacOS (unix)
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+
+# Flatpak (linux)
+rm -rf ~/.var/app/io.neovim.nvim/config/nvim
+rm -rf ~/.var/app/io.neovim.nvim/data/nvim
+rm -rf ~/.var/app/io.neovim.nvim/.local/state/nvim
+
+# Windows CMD
+rd -r ~\AppData\Local\nvim
+rd -r ~\AppData\Local\nvim-data
+
+# Windows PowerShell
+rm -Force ~\AppData\Local\nvim
+rm -Force ~\AppData\Local\nvim-data
