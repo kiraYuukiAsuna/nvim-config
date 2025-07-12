@@ -14,7 +14,9 @@
 
 4. Run :MasonInstallAll command after lazy.nvim finishes downloading plugins. 会下载相关的LSP插件等
 
-5. 更新插件命令：:Lazy sync
+5. TreeSitter相关语言语法高亮下载：首先使用 :TSInstallInfo查看已经安装的插件中是否有你需要使用的语言的，如果没有可以使用命令 :TSInstall xxx来进行安装
+
+7. 更新插件命令：:Lazy sync
 
 ## 卸载删除
 
