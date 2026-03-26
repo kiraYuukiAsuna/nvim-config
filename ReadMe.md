@@ -12,9 +12,9 @@
 
 3. 打开nvim，默认情况下插件会开始自动下载同步，如果有文件下载失败，不要慌张，等待其他文件下载完成后，退出再次打开，尝试下载失败的插件
 
-4. Run :MasonInstallAll command after lazy.nvim finishes downloading plugins. 会下载相关的LSP插件等
+4. 运行 `:MasonInstallAll` 一键安装所有配置的 LSP 服务器，也可以使用 `:MasonInstall <name>` 按需手动安装单个 LSP，具体的 LSP 列表参考 `lua/configs/lspconfig.lua` 中的 `servers` 字段
 
-5. TreeSitter相关语言语法高亮下载：首先使用 :TSInstallInfo查看已经安装的插件中是否有你需要使用的语言的，如果没有可以使用命令 :TSInstall xxx来进行安装
+5. TreeSitter 语法高亮：配置中已启用 `auto_install`，打开文件时会自动安装对应语言的 parser。也可以运行 `:TSInstall all` 一键安装所有可用的 parser，或使用 `:TSInstall <lang>` 按需手动安装。使用 `:TSInstallInfo` 查看当前安装状态，语言列表参考 `lua/plugins/init.lua` 中的 `ensure_installed` 字段
 
 7. 更新插件命令：:Lazy sync
 

@@ -16,13 +16,35 @@ return {
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      auto_install = true,
+      ensure_installed = {
+        -- Web
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        -- C/C++
+        "c",
+        "cpp",
+        "cmake",
+        -- C#
+        "c_sharp",
+        -- Python
+        "python",
+        -- Lua
+        "lua",
+        "luadoc",
+        -- Data formats
+        "json",
+        "yaml",
+        "markdown",
+        -- Vim
+        "vim",
+        "vimdoc",
+      },
+    },
+  },
 }

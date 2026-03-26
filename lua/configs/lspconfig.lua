@@ -1,10 +1,24 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls" }
-vim.lsp.enable(servers)
+-- read :h vim.lsp.config for changing options of lsp servers
 
--- read :h vim.lsp.config for changing options of lsp servers 
-
-local servers = { 'clangd', 'cmake', 'csharp_ls', 'pyright' }
+local servers = {
+  -- Web
+  "html",
+  "cssls",
+  "ts_ls",
+  -- C/C++
+  "clangd",
+  "cmake",
+  -- C#
+  "csharp_ls",
+  -- Python
+  "pyright",
+  -- Lua
+  "lua_ls",
+  -- Data formats
+  "jsonls",
+  "yamlls",
+}
 
 vim.lsp.enable(servers)
