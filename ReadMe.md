@@ -14,7 +14,7 @@
 
 4. 运行 `:MasonInstallAll` 一键安装所有配置的 LSP 服务器，也可以使用 `:MasonInstall <name>` 按需手动安装单个 LSP，具体的 LSP 列表参考 `lua/configs/lspconfig.lua` 中的 `servers` 字段
 
-5. TreeSitter 语法高亮：配置中已启用 `auto_install`，打开文件时会自动安装对应语言的 parser。也可以运行 `:TSInstall all` 一键安装所有可用的 parser，或使用 `:TSInstall <lang>` 按需手动安装。使用 `:TSInstallInfo` 查看当前安装状态，语言列表参考 `lua/plugins/init.lua` 中的 `ensure_installed` 字段
+5. TreeSitter 语法高亮：`ensure_installed` 中列出的 parser 会在启动时自动安装，同时已启用 `auto_install`，打开未列出语言的文件时也会自动安装对应 parser。如需手动安装额外的 parser，可使用 `:TSInstall <lang>`。语言列表参考 `lua/plugins/init.lua` 中的 `ensure_installed` 字段
 
 7. 更新插件命令：:Lazy sync
 
