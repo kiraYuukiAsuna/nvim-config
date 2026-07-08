@@ -34,6 +34,10 @@ return {
         "c_sharp",
         -- Python
         "python",
+        -- Rust
+        "rust",
+        -- Go
+        "go",
         -- Lua
         "lua",
         "luadoc",

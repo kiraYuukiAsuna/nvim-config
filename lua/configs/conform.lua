@@ -26,6 +26,10 @@ local options = {
         -- C#
         cs = { "csharpier" },
         csharp = { "csharpier" },
+        -- Rust
+        rust = { "rustfmt" },
+        -- Go
+        go = { "gofumpt", "goimports" },
   },
 
     format_on_save = {

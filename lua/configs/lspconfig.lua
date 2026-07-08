@@ -14,6 +14,10 @@ local servers = {
   "csharp_ls",
   -- Python
   "pyright",
+  -- Rust
+  "rust_analyzer",
+  -- Go
+  "gopls",
   -- Lua
   "lua_ls",
   -- Data formats
